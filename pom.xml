@@ -8,11 +8,12 @@
         <version>2.4.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
+
+    <groupId>com.sid</groupId>
     <artifactId>dtoConverter_v1</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-RC1</version>
     <name>dtoConverter_v1</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Dto project based on Spring Boot</description>
     <properties>
         <java.version>11</java.version>
     </properties>

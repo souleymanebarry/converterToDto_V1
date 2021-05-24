@@ -19,10 +19,10 @@ public class Application {
     @Bean
     CommandLineRunner start(StudentRepository studentRepository){
         return args -> {
-            studentRepository.save(new Student(null,"sangare","msangare","1234",new Date()));
-            studentRepository.save(new Student(null,"barry","s.barry","1234",new Date()));
-            studentRepository.save(new Student(null,"lamine","l.camara","1234",new Date()));
-            studentRepository.save(new Student(null,"dupond","louise.dupond","1234",new Date()));
+            studentRepository.save(new Student(null,"sangare","msangare","1234",new Date(),null));
+            studentRepository.save(new Student(null,"barry","s.barry","1234",new Date(),null));
+            studentRepository.save(new Student(null,"lamine","l.camara","1234",new Date(),null));
+            studentRepository.save(new Student(null,"dupond","louise.dupond","1234",new Date(),null));
         };
     }
 

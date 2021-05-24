@@ -1,6 +1,6 @@
 package com.sid.controller;
 
-import com.sid.converter.StudentConverter;
+import com.sid.converter.modelMapper.StudentConverterModelMapper;
 import com.sid.dao.StudentRepository;
 import com.sid.dto.StudentDto;
 import com.sid.entities.Student;
@@ -16,13 +16,12 @@ import java.util.List;
 public class StudentController {
 
     private StudentRepository studentRepository;
-    private StudentConverter converter;
+    private StudentConverterModelMapper converter;
 
-    public StudentController(StudentRepository studentRepository, StudentConverter converter) {
+    public StudentController(StudentRepository studentRepository, StudentConverterModelMapper converter) {
         this.studentRepository = studentRepository;
         this.converter = converter;
     }
-
 
     @GetMapping(path = "/students")
     @ApiOperation("load all students")
